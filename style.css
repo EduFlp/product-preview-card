@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root{
+/*Primary*/
+--Dark-cyan: hsl(158, 36%, 37%);
+--cyan: hsl(159, 91%, 9%);
+--Cream: hsl(30, 38%, 92%);
+/*Neutral*/
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+.card{
+    display: flex;
+    width: 600px;
+    height: 447px;
+    border-radius: 10px;
+    background-color: var(--White);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+
+}
+.left img{
+    width: 297px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.right{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 28px;
+    height: auto;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+.name{
+    color: var(--Very-dark-blue);
+    font-family: 'Fraunces', sans-serif;
+}
+.right a{
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Fraunces', sans-serif;
+}
+.price h1{
+    color: var(--Dark-cyan);
+}
+.price small{
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+}
+.right .btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 47px;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+    border: none;
+}
+.right .btn:hover{
+    background-color: var(--cyan);
+}
